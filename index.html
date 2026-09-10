@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hello World</title>
+
+  <style>
+    :root {
+      --background: #F4F1EA;
+      --text: #111111;
+      --orange: #FF4D00;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+
+      background-color: var(--background);
+      background-image: url("images.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 68%;
+
+      transform: translate(-50%, -50%);
+
+      text-align: left;
+    }
+
+    h1 {
+      margin: 0;
+
+      font-size: 70px;
+      line-height: 1;
+      letter-spacing: -3px;
+
+      white-space: nowrap;
+    }
+
+    h1 span {
+      color: var(--orange);
+    }
+
+    .welcome {
+      margin-top: 25px;
+      font-size: 18px;
+    }
+
+    .dot {
+      display: inline-block;
+
+      width: 9px;
+      height: 9px;
+
+      margin-right: 8px;
+
+      background-color: var(--orange);
+      border-radius: 50%;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 25px;
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="content">
+
+    <h1>
+      Hello, <span>"World"</span>
+    </h1>
+
+    <p class="welcome">
+      <span class="dot"></span>
+      Welcome to Web Engineering Lab 1
+    </p>
+
+  </div>
+
+  <div class="footer">
+    HTML + CSS / 2026
+  </div>
+
+</body>
+</html>
